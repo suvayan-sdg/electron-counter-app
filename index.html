@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter App</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <p>Click the button to increment the counter:</p>
+    <button id="increment">Increment</button>
+    <p id="counter">0</p>
+
+    <script>
+      document.getElementById("increment").addEventListener("click", () => {
+        let counter = parseInt(document.getElementById("counter").textContent);
+        counter++;
+        document.getElementById("counter").textContent = counter;
+      });
+    </script>
+  </body>
+</html>
